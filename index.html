@@ -5,17 +5,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Personal portfolio Website</title>
+  <title>Mohd Ghouse Tazeem</title>
 
   <!-- 
     - favicon
   -->
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
-
   <!-- 
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- *******  Font Awesome Icons Link  ******* -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 
   <!-- 
     - google font link
@@ -27,7 +28,18 @@
     rel="stylesheet">
 </head>
 
+<!-- 
+    - Loader  
+  -->
+
+
+<!-- 
+    - Loader End 
+  -->
+
 <body id="top" class="dark_theme">
+
+
 
   <!-- 
     - #HEADER
@@ -70,7 +82,11 @@
           </li>
 
           <li>
-            <a href="#portfolio" class="navbar-link">Portfolio.</a>
+            <a href="#resume" class="navbar-link">Resume.</a>
+          </li>
+
+          <li>
+            <a href="#projects" class="navbar-link">Projects.</a>
           </li>
 
           <li>
@@ -111,7 +127,7 @@
           <h3 class="h3 hero-title" style="margin-bottom: 0;">👋 Hi there 👋</h3>
           <h2 class="h2 hero-title" style="font-family: 'Saira Stencil One', sans-serif; margin-bottom: 0;">Mohd Ghouse
             Tazeem</h2>
-          <h3 class="h3 hero-title">Software developer</h3>
+          <h3 class="h3 hero-title">Software Developer</h3>
           <a href="#contact" class="btn btn-primary">Get in touch</a>
 
         </div>
@@ -119,15 +135,15 @@
         <ul class="hero-social-list">
 
           <li>
-            <a href="#" class="hero-social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
+            <a href="https://github.com/ghousetazeem" class="hero-social-link">
+              <ion-icon name="logo-github"></ion-icon>
 
-              <div class="tooltip">Facebook</div>
+              <div class="tooltip">GitHub</div>
             </a>
           </li>
 
           <li>
-            <a href="#" class="hero-social-link">
+            <a href="https://twitter.com/Ghouse_Tazeem" class="hero-social-link">
               <ion-icon name="logo-twitter"></ion-icon>
 
               <div class="tooltip">Twitter</div>
@@ -135,10 +151,26 @@
           </li>
 
           <li>
-            <a href="#" class="hero-social-link">
+            <a href="https://www.linkedin.com/in/mohd-ghouse-tazeem-9201991bb/" class="hero-social-link">
               <ion-icon name="logo-linkedin"></ion-icon>
 
               <div class="tooltip">Linkedin</div>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://leetcode.com/mohammedghousetazeem/" class="hero-social-link">
+              <ion-icon name="code-working-outline">LeetCode</ion-icon>
+
+              <div class="tooltip">LeetCode</div>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.youtube.com/channel/UCItDmx5x6xwckeLFkMdZjlw" class="hero-social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+
+              <div class="tooltip">Youtube</div>
             </a>
           </li>
 
@@ -243,9 +275,10 @@
           </p>
 
           <div class="btn-group">
-            <button class="btn btn-secondary">Hire me</button>
+            <button class="btn btn-secondary" href="#contact"><a href="#contact" style="color: white;">Hire
+                me</a></button>
 
-            <button class="btn btn-primary"><a href="www.google.com" style="color: #e38445;">Download cv</a></button>
+            <button class="btn btn-primary"><a href="resume.html" style="color: #e38445;">Download cv</a></button>
           </div>
 
         </div>
@@ -269,9 +302,8 @@
           <h2 class="h3 section-title">What My Programming Skills Included?</h2>
 
           <p class="section-text">
-            I develop simple, intuitive and responsive user interface that helps users get things done with less effort
-            and time
-            with those technologies.
+            I am a skilled software developer with expertise in full-stack web development and a strong interest in AI
+            and ML technologies, bringing innovative solutions to life.
           </p>
 
           <div class="skills-toggle" data-toggle-box>
@@ -285,6 +317,26 @@
         <div class="skills-box" data-skills-box>
 
           <ul class="skills-list">
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">C++</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/c++.png" alt="C++ logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Python</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/python.png" alt="Python logo">
+                </div>
+              </div>
+            </li>
 
             <li>
               <div class="skill-card">
@@ -328,10 +380,10 @@
 
             <li>
               <div class="skill-card">
-                <div class="tooltip">jQuery</div>
+                <div class="tooltip">React JS</div>
 
                 <div class="card-icon">
-                  <img src="./assets/images/jquery.png" alt="jQuery logo">
+                  <img src="./assets/images/react.png" alt="React logo">
                 </div>
               </div>
             </li>
@@ -348,30 +400,30 @@
 
             <li>
               <div class="skill-card">
-                <div class="tooltip">Angular</div>
+                <div class="tooltip">TailwindCSS</div>
 
                 <div class="card-icon">
-                  <img src="./assets/images/angular.png" alt="Angular logo">
+                  <img src="./assets/images/tailwindcss.png" alt="TailwindCSS logo">
                 </div>
               </div>
             </li>
 
             <li>
               <div class="skill-card">
-                <div class="tooltip">React</div>
+                <div class="tooltip">MongoDB</div>
 
                 <div class="card-icon">
-                  <img src="./assets/images/react.png" alt="React logo">
+                  <img src="./assets/images/mongodb.png" alt="MongoDB logo">
                 </div>
               </div>
             </li>
 
             <li>
               <div class="skill-card">
-                <div class="tooltip">Vue</div>
+                <div class="tooltip">Node JS</div>
 
                 <div class="card-icon">
-                  <img src="./assets/images/vue.png" alt="Vue logo">
+                  <img src="./assets/images/nodejs.png" alt="Node logo">
                 </div>
               </div>
             </li>
@@ -388,20 +440,20 @@
 
             <li>
               <div class="skill-card">
-                <div class="tooltip">PugJs</div>
+                <div class="tooltip">Redux Toolkit</div>
 
                 <div class="card-icon">
-                  <img src="./assets/images/pugjs.png" alt="PugJs logo">
+                  <img src="./assets/images/reduxtoolkits.png" alt=" Redux logo">
                 </div>
               </div>
             </li>
 
             <li>
               <div class="skill-card">
-                <div class="tooltip">SASS</div>
+                <div class="tooltip">Wordpress</div>
 
                 <div class="card-icon">
-                  <img src="./assets/images/sass.png" alt="SASS logo">
+                  <img src="./assets/images/wordpress.png" alt="Wordpress logo">
                 </div>
               </div>
             </li>
@@ -412,20 +464,30 @@
 
             <li>
               <div class="skill-card">
-                <div class="tooltip">Ajax</div>
+                <div class="tooltip">VS Code</div>
 
                 <div class="card-icon">
-                  <img src="./assets/images/ajax.png" alt="Ajax logo">
+                  <img src="./assets/images/vs-code.png" alt="VS Code logo">
                 </div>
               </div>
             </li>
 
             <li>
               <div class="skill-card">
-                <div class="tooltip">Gulp</div>
+                <div class="tooltip">Git</div>
 
                 <div class="card-icon">
-                  <img src="./assets/images/gulp.png" alt="Gulp logo">
+                  <img src="./assets/images/git.png" alt="Git logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">GitHub</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/github.png" alt="GitHub logo">
                 </div>
               </div>
             </li>
@@ -440,15 +502,6 @@
               </div>
             </li>
 
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Git</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/git.png" alt="Git logo">
-                </div>
-              </div>
-            </li>
 
             <li>
               <div class="skill-card">
@@ -472,30 +525,20 @@
 
             <li>
               <div class="skill-card">
-                <div class="tooltip">VS Code</div>
+                <div class="tooltip">Jira</div>
 
                 <div class="card-icon">
-                  <img src="./assets/images/vs-code.png" alt="VS Code logo">
+                  <img src="./assets/images/jira.png" alt="Jira logo">
                 </div>
               </div>
             </li>
 
             <li>
               <div class="skill-card">
-                <div class="tooltip">Trello</div>
+                <div class="tooltip">Postman</div>
 
                 <div class="card-icon">
-                  <img src="./assets/images/trello.png" alt="Trello logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">ClickUp</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/clickup.png" alt="ClickUp logo">
+                  <img src="./assets/images/postman.png" alt="Postman logo">
                 </div>
               </div>
             </li>
@@ -512,20 +555,10 @@
 
             <li>
               <div class="skill-card">
-                <div class="tooltip">Photoshop</div>
+                <div class="tooltip">Jupyter Notebook</div>
 
                 <div class="card-icon">
-                  <img src="./assets/images/photoshop.png" alt="Photoshop logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Adobe XD</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/adobe-xd.png" alt="Adobe XD logo">
+                  <img src="./assets/images/jupyter.png" alt="Jupyter Notebook logo">
                 </div>
               </div>
             </li>
@@ -554,417 +587,459 @@
         <div class="resume-container">
           <div class="row">
             <!-- Education Starts here -->
-            <section class="col">
+            <div class="col">
               <header class="title">
                 <h2 class="h3 section-title">Education</h2>
                 <div class="contents">
 
                   <div class="box">
-                    <h4>2018 - 2020</h4>
-                    <h3 class="h4 section-title" style="margin-bottom: 4px;">High School Degree</h3>
-                    <p class="section-text" style="margin-bottom: 12px;">Lorem ipsum dolor sit, amet consectetur
-                      adipisicing elit. Exercitationem
-                      voluptatem perferendis
-                      soluta enim illo omnis impedit tenetur possimus aperiam assumenda!</p>
+                    <h4>2020 - 2024</h4>
+                    <h3 class="h4 section-title" style="margin-bottom: 4px;">Electronics and Communication Engineering
+                    </h3>
+                    <h4 class="h5 section-title" style="margin-bottom: 6px;">Muffakham Jah College of Engineering and
+                      Technology</h4>
+                    <p class="section-text" style="margin-bottom: 12px;">CGPA - 7.6</p>
                   </div>
 
                   <div class="box">
                     <h4>2018 - 2020</h4>
-                    <h3 class="h4 section-title" style="margin-bottom: 4px;">High School Degree</h3>
-                    <p class="section-text" style="margin-bottom: 12px;">Lorem ipsum dolor sit, amet consectetur
-                      adipisicing elit. Exercitationem
-                      voluptatem perferendis
-                      soluta enim illo omnis impedit tenetur possimus aperiam assumenda!</p>
+                    <h3 class="h4 section-title" style="margin-bottom: 4px;">MPC(Maths, Physics, Chemistry)
+                    </h3>
+                    <h4 class="h5 section-title" style="margin-bottom: 6px;">Narayana Junior College</h4>
+                    <p class="section-text" style="margin-bottom: 12px;">Percentage - 91%</p>
                   </div>
 
-                  <div class="box">
-                    <h4>2018 - 2020</h4>
-                    <h3 class="h4 section-title" style="margin-bottom: 4px;">High School Degree</h3>
-                    <p class="section-text" style="margin-bottom: 12px;">Lorem ipsum dolor sit, amet consectetur
-                      adipisicing elit. Exercitationem
-                      voluptatem perferendis
-                      soluta enim illo omnis impedit tenetur possimus aperiam assumenda!</p>
-                  </div>
+                  <!-- <div class="box">
+                    <h4>2020 - 2024</h4>
+                    <h3 class="h4 section-title" style="margin-bottom: 4px;">Electronics and Communication Engineering
+                    </h3>
+                    <h4 class="h5 section-title" style="margin-bottom: 6px;">Muffakham Jah College of Engineering and
+                      Technology</h4>
+                    <p class="section-text" style="margin-bottom: 12px;">CGPA - 7.6</p>
+                  </div> -->
 
                 </div>
               </header>
-            </section>
+            </div>
             <!-- Education Ends here -->
 
             <!-- Experience Section Starts here -->
-            <section class="col">
+            <div class="col">
               <header class="title">
                 <h2 class="h3 section-title">Experience</h2>
                 <div class="contents">
 
                   <div class="box">
-                    <h4>2018 - 2020</h4>
-                    <h3 class="h4 section-title" style="margin-bottom: 4px;">High School Degree</h3>
-                    <p class="section-text" style="margin-bottom: 12px;">Lorem ipsum dolor sit, amet consectetur
-                      adipisicing elit. Exercitationem
-                      voluptatem perferendis
-                      soluta
-                      enim illo omnis impedit tenetur possimus aperiam assumenda!</p>
+                    <h4>Jun 2023 - Aug 2023</h4>
+                    <h3 class="h4 section-title" style="margin-bottom: 4px;">Software Engineering Intern</h3>
+                    <h4 class="h5 section-title" style="margin-bottom: 6px;">GigAndTake (United States, Remote)</h4>
+                    <p class="section-text" style="margin-bottom: 12px;">As a Software Engineering Intern, I contributed
+                      to dynamic user experiences as a Frontend Developer, leveraging my skills to create and add
+                      intuitive and responsive web interfaces.</p>
                   </div>
 
                   <div class="box">
-                    <h4>2018 - 2020</h4>
-                    <h3 class="h4 section-title" style="margin-bottom: 4px;">High School Degree</h3>
-                    <p class="section-text" style="margin-bottom: 12px;">Lorem ipsum dolor sit, amet consectetur
-                      adipisicing elit. Exercitationem
-                      voluptatem perferendis
-                      soluta
-                      enim illo omnis impedit tenetur possimus aperiam assumenda!</p>
+                    <h4>Jul 2023 - Present</h4>
+                    <h3 class="h4 section-title" style="margin-bottom: 4px;">Vice Chair</h3>
+                    <h4 class="h5 section-title" style="margin-bottom: 6px;">IEEE Compouter Society, MJCET</h4>
+                    <p class="section-text" style="margin-bottom: 12px;">As IEEE Computer
+                      Society Vice Chair, I assist in leading the organization's strategic initiatives and help shape
+                      the future of computer science and technology.</p>
                   </div>
 
                   <div class="box">
-                    <h4>2018 - 2020</h4>
-                    <h3 class="h4 section-title" style="margin-bottom: 4px;">High School Degree</h3>
-                    <p class="section-text" style="margin-bottom: 12px;">Lorem ipsum dolor sit, amet consectetur
-                      adipisicing elit. Exercitationem
-                      voluptatem perferendis
-                      soluta
-                      enim illo omnis impedit tenetur possimus aperiam assumenda!</p>
+                    <h4>Aug 2023 - Present</h4>
+                    <h3 class="h4 section-title" style="margin-bottom: 4px;">Chief Coordinator</h3>
+                    <h4 class="h5 section-title" style="margin-bottom: 6px;">Google Developer Student Club,
+                      MJCET</h4>
+                    <p class="section-text" style="margin-bottom: 12px;">As a Software Engineering Intern, I
+                      contributed
+                      to dynamic user experiences as a Frontend Developer, leveraging my skills to create and add
+                      intuitive and responsive web interfaces</p>
+                  </div>
+
+                  <div class="box">
+                    <h4>Dec 2021 - Oct 2023</h4>
+                    <h3 class="h4 section-title" style="margin-bottom: 4px;">Tech Lead</h3>
+                    <h4 class="h5 section-title" style="margin-bottom: 6px;">Computer Society of India,
+                      MJCET</h4>
+                    <p class="section-text" style="margin-bottom: 12px;">As a Tech Head at Computer society of India,
+                      MJCET, Organized 2 Intercollege level Hackathons, conducted various workshops, led team of 8
+                      members, built several projects for CSI expo.</p>
+                  </div>
+
+                  <div class="box">
+                    <h4>Oct 2022 - Aug 2023</h4>
+                    <h3 class="h4 section-title" style="margin-bottom: 4px;">Web Team Lead</h3>
+                    <h4 class="h5 section-title" style="margin-bottom: 6px;">Entrepreneuership Cell,
+                      MJCET</h4>
+                    <p class="section-text" style="margin-bottom: 12px;">Held responsible for handling all digital
+                      technical material which directly relates to the E-Cell objectives and reflects the work done by
+                      E-Cell to the world doing their web related work along with leading the team
+                      of 4 members.</p>
                   </div>
 
                 </div>
               </header>
+            </div>
 
-
-              <!-- Experinece Ends here -->
+            <!-- Experinece Ends here -->
           </div>
-        </div>
-      </section>
+
+          <!-- Achievments section starts here -->
+
+          <!-- Achievments section ends here -->
 
 
 
 
 
-      <!-- 
+          <!-- 
         - #PROJECTS
       -->
 
-      <section class="project" id="portfolio">
+          <section class="project" id="projects">
 
-        <ul class="project-list">
+            <ul class="project-list">
 
-          <li>
-            <div class="project-content section-content">
+              <li>
+                <div class="project-content section-content">
 
-              <p class="section-subtitle">My Works</p>
+                  <p class="section-subtitle">My Projects</p>
 
-              <h2 class="h3 section-title">See My Works Which Will Amaze You!</h2>
+                  <h2 class="h3 section-title">See My Works Which Will Amaze You!</h2>
 
-              <p class="section-text">
-                We develop the best quality website that serves for the long-term. Well-documented, clean, easy and
-                elegant interface
-                helps any non-technical clients.
-              </p>
+                  <p class="section-text">
+                    Here are my projects that I have worked on during my college journey. More to come soon.
+                  </p>
 
-            </div>
-          </li>
+                </div>
+              </li>
 
-          <li>
-            <a href="#" class="project-card">
+              <li>
+                <a href="https://github.com/ghousetazeem/MJBlog" class="project-card">
 
-              <figure class="card-banner">
-                <img src="./assets/images/project-1.png" class="w-100" alt="A macintosh on a yellow background.">
-              </figure>
+                  <figure class="card-banner">
+                    <img src="./assets/images/mjblogs.jpg" class="w-100" alt="A macintosh on a yellow background.">
+                  </figure>
 
-              <div class="card-content">
-                <h3 class="h4 card-title">Lorem Ipsum Dolor 01</h3>
+                  <div class="card-content">
+                    <h3 class="h4 card-title" style="margin: 4px; border-radius: 18px;">MJ's Blog</h3>
+                    <div class="flexing" style="display: flex; flex-direction: row;">
+                      <time class="publish-date" style="margin: 4px; border-radius: 18px;">MERN Stack</time>
+                      <time class="publish-date" style="margin: 4px; border-radius: 18px;">JWT</time>
+                      <time class="publish-date" style="margin: 4px; border-radius: 18px;">Firebase</time>
+                    </div>
 
-                <time class="publish-date" datetime="2022-04">April 2022</time>
-              </div>
+                  </div>
 
-            </a>
-          </li>
+                </a>
+              </li>
 
-          <li>
-            <a href="#" class="project-card">
+              <li>
+                <a href="https://github.com/ghousetazeem/Personal-Asisstant" class="project-card">
 
-              <figure class="card-banner">
-                <img src="./assets/images/project-2.png" class="w-100" alt="On a Blue background, a Wacom and a mouse.">
-              </figure>
+                  <figure class="card-banner">
+                    <img src="./assets/images/personalasisstant.jpg" class="w-100"
+                      alt="On a Blue background, a Wacom and a mouse.">
+                  </figure>
 
-              <div class="card-content">
-                <h3 class="h4 card-title">Lorem Ipsum Dolor 02</h3>
+                  <div class="card-content">
+                    <h3 class="h4 card-title" style="margin: 4px; border-radius: 18px;">Personal Assistant</h3>
 
-                <time class="publish-date" datetime="2022-04">April 2022</time>
-              </div>
+                    <div class="flexing" style="display: flex; flex-direction: row;">
+                      <time class="publish-date" style="margin: 4px; border-radius: 18px;">Python</time>
+                      <time class="publish-date" style="margin: 4px; border-radius: 18px;">Speech Recognition</time>
+                    </div>
+                  </div>
 
-            </a>
-          </li>
+                </a>
+              </li>
 
-          <li>
-            <a href="#" class="project-card">
+              <li>
+                <a href="https://cloneimdb1.netlify.app/" class="project-card">
 
-              <figure class="card-banner">
-                <img src="./assets/images/project-3.png" class="w-100"
-                  alt="A Cassette tape on a mellow apricot background.">
-              </figure>
+                  <figure class="card-banner">
+                    <img src="./assets/images/imdbclone.jpg" class="w-100"
+                      alt="A Cassette tape on a mellow apricot background.">
+                  </figure>
 
-              <div class="card-content">
-                <h3 class="h4 card-title">Lorem Ipsum Dolor 03</h3>
+                  <div class="card-content">
+                    <h3 class="h4 card-title" style="margin: 4px; border-radius: 18px;">IMDB Ratings</h3>
 
-                <time class="publish-date" datetime="2022-04">April 2022</time>
-              </div>
+                    <div class="flexing" style="display: flex; flex-direction: row;">
+                      <time class="publish-date" style="margin: 4px; border-radius: 18px;">React</time>
+                      <time class="publish-date" style="margin: 4px; border-radius: 18px;">Node</time>
+                      <time class="publish-date" style="margin: 4px; border-radius: 18px;">IMDB Rating</time>
+                    </div>
+                  </div>
 
-            </a>
-          </li>
+                </a>
+              </li>
 
-          <li>
-            <a href="#" class="project-card">
+              <li>
+                <a href="https://wittychat.netlify.app/" class="project-card">
 
-              <figure class="card-banner">
-                <img src="./assets/images/project-4.png" class="w-100"
-                  alt="Blue digital watch on a dark liver background.">
-              </figure>
+                  <figure class="card-banner">
+                    <img src="./assets/images/wittychat.jpg" class="w-100"
+                      alt="Blue digital watch on a dark liver background.">
+                  </figure>
 
-              <div class="card-content">
-                <h3 class="h4 card-title">Lorem Ipsum Dolor 04</h3>
+                  <div class="card-content">
+                    <h3 class="h4 card-title" style="margin: 4px; border-radius: 18px;">WittyChat</h3>
 
-                <time class="publish-date" datetime="2022-04">April 2022</time>
-              </div>
+                    <div class="flexing" style="display: flex; flex-direction: row;">
+                      <time class="publish-date" style="margin: 4px; border-radius: 18px;">React</time>
+                      <time class="publish-date" style="margin: 4px; border-radius: 18px;">G-Auth</time>
+                      <time class="publish-date" style="margin: 4px; border-radius: 18px;">Firebase</time>
+                    </div>
+                  </div>
 
-            </a>
-          </li>
+                </a>
+              </li>
 
-          <li>
-            <a href="#" class="project-card">
+              <li>
+                <a href="https://lerntek.netlify.app/" class="project-card">
 
-              <figure class="card-banner">
-                <img src="./assets/images/project-5.png" class="w-100"
-                  alt="On a dark liver background, Airport luggage car carrying a luggage.">
-              </figure>
+                  <figure class="card-banner">
+                    <img src="./assets/images/lerntek.jpg" class="w-100"
+                      alt="On a dark liver background, Airport luggage car carrying a luggage.">
+                  </figure>
 
-              <div class="card-content">
-                <h3 class="h4 card-title">Lorem Ipsum Dolor 05</h3>
+                  <div class="card-content">
+                    <h3 class="h4 card-title" style="margin: 4px; border-radius: 18px;">MJ's Blog</h3>
 
-                <time class="publish-date" datetime="2022-04">April 2022</time>
-              </div>
+                    <div class="flexing" style="display: flex; flex-direction: row;">
+                      <time class="publish-date" style="margin: 4px; border-radius: 18px;">HTML</time>
+                      <time class="publish-date" style="margin: 4px; border-radius: 18px;">CSS</time>
+                      <time class="publish-date" style="margin: 4px; border-radius: 18px;">JavaScript</time>
+                    </div>
+                  </div>
 
-            </a>
-          </li>
+                </a>
+              </li>
 
-          <li>
-            <a href="#" class="project-card">
+              <li>
+                <a href="http://drabdulraheem.in/" class="project-card">
 
-              <figure class="card-banner">
-                <img src="./assets/images/project-6.png" class="w-100"
-                  alt="On a yellow background, a digital watch and a glass.">
-              </figure>
+                  <figure class="card-banner">
+                    <img src="./assets/images/raheemsirportfolio.jpg" class="w-100"
+                      alt="On a yellow background, a digital watch and a glass.">
+                  </figure>
 
-              <div class="card-content">
-                <h3 class="h4 card-title">Lorem Ipsum Dolor 06</h3>
+                  <div class="card-content">
+                    <h3 class="h4 card-title" style="margin: 4px; border-radius: 18px;">College Professor Portfolio</h3>
 
-                <time class="publish-date" datetime="2022-04">April 2022</time>
-              </div>
+                    <div class="flexing" style="display: flex; flex-direction: row;">
+                      <time class="publish-date" style="margin: 4px; border-radius: 18px;">React</time>
+                      <time class="publish-date" style="margin: 4px; border-radius: 18px;">Node</time>
+                      <time class="publish-date" style="margin: 4px; border-radius: 18px;">Firebase</time>
+                    </div>
+                  </div>
 
-            </a>
-          </li>
+                </a>
+              </li>
 
-          <li>
-            <a href="#" class="project-card">
+              <li>
+                <a href="#" class="project-card">
 
-              <figure class="card-banner">
-                <img src="./assets/images/project-7.png" class="w-100"
-                  alt="A fujifilm instant camera on a dark electric blue background.">
-              </figure>
+                  <figure class="card-banner">
+                    <img src="./assets/images/baseballacademy.jpg" class="w-100"
+                      alt="A fujifilm instant camera on a dark electric blue background.">
+                  </figure>
 
-              <div class="card-content">
-                <h3 class="h4 card-title">Lorem Ipsum Dolor 07</h3>
+                  <div class="card-content">
+                    <h3 class="h4 card-title" style="margin: 4px; border-radius: 18px;">College baseball academy</h3>
 
-                <time class="publish-date" datetime="2022-04">April 2022</time>
-              </div>
+                    <div class="flexing" style="display: flex; flex-direction: row;">
+                      <time class="publish-date" style="margin: 4px; border-radius: 18px;">HTML/CSS</time>
+                      <time class="publish-date" style="margin: 4px; border-radius: 18px;">JavaScript</time>
+                      <time class="publish-date" style="margin: 4px; border-radius: 18px;">BootStrap</time>
+                    </div>
+                  </div>
 
-            </a>
-          </li>
+                </a>
+              </li>
+            </ul>
 
-          <li>
-            <button class="load-more">Load more work</button>
-          </li>
-
-        </ul>
-
-      </section>
-
+          </section>
 
 
 
 
-      <!-- 
+
+          <!-- 
         - #CONTACT
       -->
 
-      <section class="contact" id="contact">
+          <section class="contact" id="contact">
 
-        <div class="contact-content section-content">
+            <div class="contact-content section-content">
 
-          <p class="section-subtitle">Contact</p>
+              <p class="section-subtitle">Contact</p>
 
-          <h2 class="h3 section-title">To know more about me? Please Drop a Message</h2>
+              <h2 class="h3 section-title">To know more about me? Please Drop a Message</h2>
 
-          <p class="section-text">
-            Get in touch and let me know how i can help. Fill out the form and i’ll be in touch as soon as possible.
-          </p>
+              <p class="section-text">
+                Get in touch and let me know how i can help. Fill out the form and i’ll be in touch as soon as possible.
+              </p>
 
-          <ul class="contact-list">
+              <ul class="contact-list">
 
-            <li class="contact-list-item">
+                <li class="contact-list-item">
 
-              <div class="contact-item-icon">
-                <ion-icon name="location-outline"></ion-icon>
-              </div>
+                  <div class="contact-item-icon">
+                    <ion-icon name="location-outline"></ion-icon>
+                  </div>
 
-              <div class="wrapper">
-                <h3 class="h4 contact-item-title">Address:</h3>
+                  <div class="wrapper">
+                    <h3 class="h4 contact-item-title">Address:</h3>
 
-                <address class="contact-info">
-                  Santosh Nagar, Hyderabad, Telangana, India
-                </address>
-              </div>
+                    <address class="contact-info">
+                      Santosh Nagar, Hyderabad, Telangana, India
+                    </address>
+                  </div>
 
-            </li>
+                </li>
 
-            <li class="contact-list-item">
+                <li class="contact-list-item">
 
-              <div class="contact-item-icon">
-                <ion-icon name="call-outline"></ion-icon>
-              </div>
+                  <div class="contact-item-icon">
+                    <ion-icon name="call-outline"></ion-icon>
+                  </div>
 
-              <div class="wrapper">
-                <h3 class="h4 contact-item-title">Phone:</h3>
+                  <div class="wrapper">
+                    <h3 class="h4 contact-item-title">Phone:</h3>
 
-                <a href="tel:01234567789" class="contact-info">(+91) 6309274038</a>
+                    <a href="tel:01234567789" class="contact-info">(+91) 6309274038</a>
 
-              </div>
+                  </div>
 
-            </li>
+                </li>
 
-            <li class="contact-list-item">
+                <li class="contact-list-item">
 
-              <div class="contact-item-icon">
-                <ion-icon name="mail-outline"></ion-icon>
-              </div>
+                  <div class="contact-item-icon">
+                    <ion-icon name="mail-outline"></ion-icon>
+                  </div>
 
-              <div class="wrapper">
-                <h3 class="h4 contact-item-title">Email:</h3>
+                  <div class="wrapper">
+                    <h3 class="h4 contact-item-title">Email:</h3>
 
-                <a href="mailto:info@jack.com" class="contact-info">ghousetazeem75@gmail.com</a>
+                    <a href="mailto:info@jack.com" class="contact-info">ghousetazeem75@gmail.com</a>
 
-                <a href="mailto:support@jack.com" class="contact-info">lerntek@gmail.com</a>
-              </div>
+                    <a href="mailto:support@jack.com" class="contact-info">lerntek@gmail.com</a>
+                  </div>
 
-            </li>
-
-            <li>
-              <ul class="contac-social-list">
-
-                <li>
-                  <a href="#" class="contact-social-link">
-                    <div class="tooltip">Facebook</div>
-
-                    <ion-icon name="logo-facebook"></ion-icon>
-                  </a>
                 </li>
 
                 <li>
-                  <a href="#" class="contact-social-link">
-                    <div class="tooltip">Twitter</div>
+                  <ul class="contac-social-list">
 
-                    <ion-icon name="logo-twitter"></ion-icon>
-                  </a>
-                </li>
+                    <li>
+                      <a href="#" class="contact-social-link">
+                        <div class="tooltip">Facebook</div>
 
-                <li>
-                  <a href="#" class="contact-social-link">
-                    <div class="tooltip">Linkedin</div>
+                        <ion-icon name="logo-facebook"></ion-icon>
+                      </a>
+                    </li>
 
-                    <ion-icon name="logo-linkedin"></ion-icon>
-                  </a>
-                </li>
+                    <li>
+                      <a href="#" class="contact-social-link">
+                        <div class="tooltip">Twitter</div>
 
-                <li>
-                  <a href="#" class="contact-social-link">
-                    <div class="tooltip">Youtube</div>
+                        <ion-icon name="logo-twitter"></ion-icon>
+                      </a>
+                    </li>
 
-                    <ion-icon name="logo-youtube"></ion-icon>
-                  </a>
+                    <li>
+                      <a href="#" class="contact-social-link">
+                        <div class="tooltip">Linkedin</div>
+
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="contact-social-link">
+                        <div class="tooltip">Youtube</div>
+
+                        <ion-icon name="logo-youtube"></ion-icon>
+                      </a>
+                    </li>
+
+                  </ul>
                 </li>
 
               </ul>
-            </li>
-
-          </ul>
-
-        </div>
-
-        <form action="" class="contact-form">
-
-          <div class="form-wrapper">
-
-            <label for="name" class="form-label">Name</label>
-
-            <div class="input-wrapper">
-
-              <input type="text" name="name" id="name" required placeholder="e.g Jameel ❤️ Ayesha" class="input-field">
-
-              <ion-icon name="person-circle"></ion-icon>
 
             </div>
 
-          </div>
+            <form action="https://formspree.io/f/meqbpzoa" method="POST" class="contact-form">
 
-          <div class="form-wrapper">
+              <div class="form-wrapper">
 
-            <label for="email" class="form-label">Email</label>
+                <label for="name" class="form-label">Name</label>
 
-            <div class="input-wrapper">
+                <div class="input-wrapper">
 
-              <input type="email" name="email" id="email" required placeholder="e.g jameel404@mail.com"
-                class="input-field">
+                  <input type="text" name="name" id="name" required placeholder="e.g Mohd Jameel" class="input-field">
 
-              <ion-icon name="mail"></ion-icon>
+                  <ion-icon name="person-circle"></ion-icon>
 
-            </div>
+                </div>
 
-          </div>
+              </div>
 
-          <div class="form-wrapper">
+              <div class="form-wrapper">
 
-            <label for="phone" class="form-label">Phone</label>
+                <label for="email" class="form-label">Email</label>
 
-            <div class="input-wrapper">
+                <div class="input-wrapper">
 
-              <input type="tel" name="phone" id="phone" required placeholder="Phone Number" class="input-field">
+                  <input type="email" name="email" id="email" required placeholder="e.g jameel404@mail.com"
+                    class="input-field">
 
-              <ion-icon name="call"></ion-icon>
+                  <ion-icon name="mail"></ion-icon>
 
-            </div>
+                </div>
 
-          </div>
+              </div>
 
-          <div class="form-wrapper">
+              <div class="form-wrapper">
 
-            <label for="message" class="form-label">Message</label>
+                <label for="phone" class="form-label">Phone</label>
 
-            <div class="input-wrapper">
+                <div class="input-wrapper">
 
-              <textarea name="message" id="message" required placeholder="Write message..."
-                class="input-field"></textarea>
+                  <input type="tel" name="phone" id="phone" required placeholder="Phone Number" class="input-field">
 
-              <ion-icon name="chatbubbles"></ion-icon>
+                  <ion-icon name="call"></ion-icon>
 
-            </div>
+                </div>
 
-          </div>
+              </div>
 
-          <button type="submit" class="btn btn-primary">Send</button>
+              <div class="form-wrapper">
 
-        </form>
+                <label for="message" class="form-label">Message</label>
 
-      </section>
+                <div class="input-wrapper">
+
+                  <textarea name="message" id="message" required placeholder="Write message..."
+                    class="input-field"></textarea>
+
+                  <ion-icon name="chatbubbles"></ion-icon>
+
+                </div>
+
+              </div>
+
+              <button type="submit" class="btn btn-primary">Send</button>
+
+            </form>
+
+          </section>
 
     </article>
   </main>
@@ -1007,7 +1082,11 @@
 
 
 
+  <!--   *****   JQuery Link   *****   -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
+  <!--   *****   Owl Carousel js Link  *****  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
   <!-- 
     - custom js link
