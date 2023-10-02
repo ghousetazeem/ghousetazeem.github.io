@@ -128,6 +128,4 @@ var achievmentsSlider = new Swiper('.achievments-slider', {
 
 // This is script file
 
-$(window).on('load', function () {
-  $('.preloader').fadeOut(1000);
-});
+
