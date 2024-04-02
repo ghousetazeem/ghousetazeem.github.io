@@ -751,6 +751,12 @@ main {
   padding: 0px 5%;
 }
 
+div.econtents {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
 div.row {
   display: grid;
   grid-template-columns: 1fr;
@@ -1134,6 +1140,7 @@ textarea.input-field {
   }
 
 
+
   /**
    * PROJECT
    */
@@ -1162,6 +1169,9 @@ textarea.input-field {
   /**
    * REUSED STYLE
    */
+  div.econtents {
+    flex-direction: column;
+  }
 
   .container {
     max-width: 720px;
