@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mohd Ghouse Tazeem</title>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
   <!-- 
     - favicon
   -->
@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <!-- *******  Font Awesome Icons Link  ******* -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css" />
 
   <!-- 
     - google font link
@@ -582,7 +583,7 @@
 
           <p class="section-subtitle">My Resume</p>
 
-          <h2 class="h3 .section-titleSpecial">What My Education, Experience and Acheivments Included?
+          <h2 class="h3 .section-titleSpecial" style="margin-bottom: 3rem;">What My Education and Experience Included?
           </h2>
 
         </div>
@@ -689,7 +690,109 @@
           </div>
 
           <!-- Achievments section starts here -->
+          <section class="testimonial-area resume" style="margin-top: 6rem;">
+            <div class="skills-content section-content test-gap">
 
+              <p class="section-subtitle">My Achievments</p>
+
+              <h2 class="h3 .section-titleSpecial">Some of My Key Achievements
+              </h2>
+
+            </div>
+            <div class="test-container">
+              <div class="sec-title">
+                <!-- <h2>My Achievements</h2>
+                <p>Some of my notable achievements to be seen</p> -->
+              </div>
+              <div class="testimonial-content owl-carousel">
+                <div class="single-testimonial">
+                  <p>Created a Fund Raising Platform using BlockChain and Solidity for
+                    transparent transactions and improved security and trust</p>
+                  <div class="client-info">
+                    <div class="client-pic">
+                      <!-- <a href="#">
+                        <img
+                          src="https://images.pexels.com/photos/13289844/pexels-photo-13289844.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                          alt="To be added">
+                      </a> -->
+                    </div>
+                    <div class="client-details">
+                      <h6 style="margin-bottom: 8px;">Smart India Hackathon 2024</h6>
+                      <span>[Semi-Finalist]</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="single-testimonial">
+                  <p>Created a Health Care Chatbot using React.js and OpenAI for efficient Prescription
+                    Assistance, enhancing patient support.</p>
+                  <div class="client-info">
+                    <div class="client-pic">
+                      <!-- <a href="#">
+                        <img
+                          src="https://images.pexels.com/photos/13289844/pexels-photo-13289844.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                          alt="To be added">
+                      </a> -->
+                    </div>
+                    <div class="client-details">
+                      <h6 style="margin-bottom: 8px;">HackZ (Osmania University)</h6>
+                      <span>[Finalist]</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="single-testimonial">
+                  <p>Developed "ZILO," a MERN Stack project to enable direct food donations to the needy, fostering
+                    community support.</p>
+                  <div class="client-info">
+                    <div class="client-pic">
+                      <!-- <a href="#">
+                        <img
+                          src="https://images.pexels.com/photos/13289844/pexels-photo-13289844.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                          alt="To be added">
+                      </a> -->
+                    </div>
+                    <div class="client-details">
+                      <h6 style="margin-bottom: 8px;">Hack Revolution 2023</h6>
+                      <span>[Finalist]</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="single-testimonial">
+                  <p>Developed "Hospital Finder," a MERN stack project for locating nearby hospitals tailored to user
+                    needs, enhancing healthcare accessibility.</p>
+                  <div class="client-info">
+                    <div class="client-pic">
+                      <!-- <a href="#">
+                        <img
+                          src="https://images.pexels.com/photos/13289844/pexels-photo-13289844.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                          alt="To be added">
+                      </a> -->
+                    </div>
+                    <div class="client-details">
+                      <h6 style="margin-bottom: 8px;">Hack-Innovasia(Vasavi College)</h6>
+                      <span>[Top 10]</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="single-testimonial">
+                  <p>Secured Second Runner-Up in the Osmania University-hosted Carroms Competition, outperforming
+                    representatives from 12 other colleges.</p>
+                  <div class="client-info">
+                    <div class="client-pic">
+                      <!-- <a href="#">
+                        <img
+                          src="https://images.pexels.com/photos/13289844/pexels-photo-13289844.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                          alt="To be added">
+                      </a> -->
+                    </div>
+                    <div class="client-details">
+                      <h6 style="margin-bottom: 8px;">OU Carroms Competition</h6>
+                      <span>[Second Runner-Up]</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
           <!-- Achievments section ends here -->
 
 
@@ -1097,6 +1200,30 @@
 
   <!--   *****   Owl Carousel js Link  *****  -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.testimonial-content').owlCarousel({
+        loop: true,
+        margin: 40,
+        nav: false,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 3500,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 1
+          },
+          1000: {
+            items: 2
+          }
+        }
+      })
+
+    });
+  </script>
 
   <!-- 
     - custom js link

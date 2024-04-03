@@ -821,6 +821,128 @@ div.row {
 /*-----------------------------------*\
  * #ACHIEVEMENTS
 \*-----------------------------------*/
+.testimonial-area .test-container {
+  max-width: 1140px;
+  width: 100%;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.testimonial-area .test-container .sec-title {
+  position: relative;
+  margin-bottom: 0px;
+  padding-bottom: 15px;
+}
+
+.testimonial-area .test-gap {
+  gap: 22rem;
+}
+
+.testimonial-area .test-container .sec-title h2 {
+  font-size: 36px;
+  font-weight: 1000;
+  letter-spacing: 1px;
+  color: var(--color-primary);
+}
+
+.testimonial-area .test-container .sec-title p {
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--color-secondary);
+}
+
+.testimonial-area {
+  position: relative;
+  z-index: 2;
+  padding: 50px 0;
+}
+
+.testimonial-area .owl-carousel {
+  overflow: hidden;
+  padding: 0 20px;
+  padding-right: 40px;
+}
+
+.owl-carousel .owl-stage-outer {
+  padding: 30px 50px;
+  margin-left: -35px;
+  width: calc(100% + 100px);
+}
+
+.single-testimonial {
+  border: 7px solid hsl(24, 74%, 64%);
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 22px;
+  position: relative;
+  z-index: 2;
+}
+
+.single-testimonial p {
+  color: var(--color-secondary);
+  font-size: 16px;
+  line-height: 23px;
+  padding: 50px;
+  padding-bottom: 30px;
+  position: relative;
+  z-index: 3;
+}
+
+.client-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.client-info .client-details h6 {
+  color: var(--color-primary);
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.client-info .client-details span {
+  display: inline-block;
+  color: hsl(24, 74%, 64%);
+  font-size: 16px;
+}
+
+div.owl-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 28px;
+}
+
+.owl-dots button {
+  background-color: hsl(24, 74%, 64%) !important;
+  width: 15px;
+  height: 15px;
+  border-radius: 26px;
+  margin: 0 5px;
+  transition: 0.3s;
+}
+
+.owl-dots button.active {
+  width: 30px;
+}
+
+.single-testimonial:before {
+  content: '\f10d';
+  position: absolute;
+  font-family: FontAwesome;
+  left: -47px;
+  top: -7px;
+  background: var(--bg-primary);
+  color: hsl(24, 74%, 64%);
+  font-size: 80px;
+  width: 126px;
+  height: 66px;
+  z-index: -1;
+}
+
 
 /*-----------------------------------*\
  * #PROJECT
@@ -1108,6 +1230,21 @@ textarea.input-field {
 /*-----------------------------------*\
  * #MEDIA QUERIES
 \*-----------------------------------*/
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 768px) {
+  .sec-title {
+    margin: 0;
+    padding: 0;
+  }
+
+  .owl-carousel .owl-stage-outer {
+    padding: 0px 50px;
+  }
+
+  div.owl-dots {
+    margin-top: 1.4rem;
+  }
+}
 
 /**
  * responsive for larger than 550px screen
