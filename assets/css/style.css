@@ -1244,6 +1244,24 @@ textarea.input-field {
   div.owl-dots {
     margin-top: 1.4rem;
   }
+
+  .single-testimonial {
+    border: 4px solid hsl(24, 74%, 64%);
+    border-radius: 8px;
+  }
+
+  .single-testimonial p {
+    padding: 12px 14px;
+  }
+
+  .single-testimonial:before {
+    display: none;
+  }
+
+  .client-info .client-details h6 {
+    line-height: 1;
+    padding: 0px 2px;
+  }
 }
 
 /**
