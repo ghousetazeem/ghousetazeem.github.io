@@ -1,131 +1,57 @@
-'use strict';
-
-/**
- * element toggle function
- */
-
-const elemToggleFunc = function (elem) { elem.classList.toggle("active"); }
-
-
-
-/**
- * header sticky & go to top
- */
+"use strict";
 
 const header = document.querySelector("[data-header]");
-const goTopBtn = document.querySelector("[data-go-top]");
+const nav = document.querySelector("[data-nav]");
+const navToggle = document.querySelector("[data-nav-toggle]");
+const navLinks = [...document.querySelectorAll('.site-nav a[href^="#"]')];
+const sections = [...document.querySelectorAll("main section[id]")];
+const revealItems = document.querySelectorAll(".reveal");
 
-window.addEventListener("scroll", function () {
+function updateHeader() {
+  header?.classList.toggle("is-scrolled", window.scrollY > 20);
+}
 
-  if (window.scrollY >= 10) {
-    header.classList.add("active");
-    goTopBtn.classList.add("active");
-  } else {
-    header.classList.remove("active");
-    goTopBtn.classList.remove("active");
-  }
+function closeNav() {
+  nav?.classList.remove("is-open");
+  document.body.classList.remove("nav-open");
+  navToggle?.setAttribute("aria-expanded", "false");
+  navToggle?.setAttribute("aria-label", "Open navigation");
+}
 
+navToggle?.addEventListener("click", () => {
+  const opening = !nav?.classList.contains("is-open");
+  nav?.classList.toggle("is-open", opening);
+  document.body.classList.toggle("nav-open", opening);
+  navToggle.setAttribute("aria-expanded", String(opening));
+  navToggle.setAttribute("aria-label", opening ? "Close navigation" : "Open navigation");
 });
 
+navLinks.forEach((link) => link.addEventListener("click", closeNav));
+window.addEventListener("scroll", updateHeader, { passive: true });
+updateHeader();
 
-
-/**
- * navbar toggle
- */
-
-const navToggleBtn = document.querySelector("[data-nav-toggle-btn]");
-const navbar = document.querySelector("[data-navbar]");
-
-navToggleBtn.addEventListener("click", function () {
-
-  elemToggleFunc(navToggleBtn);
-  elemToggleFunc(navbar);
-  elemToggleFunc(document.body);
-
-});
-
-
-
-/**
- * skills toggle
- */
-
-const toggleBtnBox = document.querySelector("[data-toggle-box]");
-const toggleBtns = document.querySelectorAll("[data-toggle-btn]");
-const skillsBox = document.querySelector("[data-skills-box]");
-
-for (let i = 0; i < toggleBtns.length; i++) {
-  toggleBtns[i].addEventListener("click", function () {
-
-    elemToggleFunc(toggleBtnBox);
-    for (let i = 0; i < toggleBtns.length; i++) { elemToggleFunc(toggleBtns[i]); }
-    elemToggleFunc(skillsBox);
-
+const revealObserver = new IntersectionObserver((entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("is-visible");
+      observer.unobserve(entry.target);
+    }
   });
-}
+}, { threshold: 0.12, rootMargin: "0px 0px -40px" });
 
+revealItems.forEach((item) => revealObserver.observe(item));
 
+const sectionObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) return;
+    navLinks.forEach((link) => {
+      link.classList.toggle("active", link.getAttribute("href") === `#${entry.target.id}`);
+    });
+  });
+}, { rootMargin: "-35% 0px -55%", threshold: 0 });
 
-/**
- * dark & light theme toggle
- */
+sections.forEach((section) => sectionObserver.observe(section));
 
-const themeToggleBtn = document.querySelector("[data-theme-btn]");
-
-themeToggleBtn.addEventListener("click", function () {
-
-  elemToggleFunc(themeToggleBtn);
-
-  if (themeToggleBtn.classList.contains("active")) {
-    document.body.classList.remove("dark_theme");
-    document.body.classList.add("light_theme");
-
-    localStorage.setItem("theme", "light_theme");
-  } else {
-    document.body.classList.add("dark_theme");
-    document.body.classList.remove("light_theme");
-
-    localStorage.setItem("theme", "dark_theme");
-  }
-
+document.querySelectorAll("[data-year]").forEach((node) => {
+  node.textContent = new Date().getFullYear();
 });
-
-/**
- * check & apply last time selected theme from localStorage
- */
-
-if (localStorage.getItem("theme") === "light_theme") {
-  themeToggleBtn.classList.add("active");
-  document.body.classList.remove("dark_theme");
-  document.body.classList.add("light_theme");
-} else {
-  themeToggleBtn.classList.remove("active");
-  document.body.classList.remove("light_theme");
-  document.body.classList.add("dark_theme");
-}
-
-var achievmentsSlider = new Swiper('.achievments-slider', {
-  effect: 'coverflow',
-  grabCursor: true,
-  centeredSlides: true,
-  loop: true,
-  slidesPerView: 'auto',
-  coverflowEffect: {
-    rotate: 0,
-    stretch: 0,
-    depth: 100,
-    modifier: 2.5,
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  }
-});
-
-// This is script file
-
-
